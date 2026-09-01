@@ -200,9 +200,8 @@ module RSpec
 
       def keywords=(values)
         # until RSpec 4
-        # rubocop:disable Lint/UselessOr
+        # rubocop:disable-next Lint/UselessOr
         @keywords = values.to_a || []
-        # rubocop:enable Lint/UselessOr
       end
     end
 

@@ -88,7 +88,7 @@ module FormatterSupport
       |            got: 1
       |
       |       (compared using ==)
-      |     # ./spec/rspec/core/resources/formatter_specs.rb:39:in #{quoted('block (2 levels) in <top (required)>')}
+      |     # ./spec/rspec/core/resources/formatter_specs.rb:38:in #{quoted('block (2 levels) in <top (required)>')}
       |     # ./spec/support/formatter_support.rb:#{RUN_LINE}:in #{quoted("#{maybe_module}run_rspec_with_formatter")}
       |     # ./spec/support/formatter_support.rb:3:in #{quoted("#{maybe_module}run_example_specs_with_formatter")}
       |     # ./spec/support/sandboxing.rb:16:in #{quoted('block (3 levels) in <top (required)>')}
@@ -103,7 +103,7 @@ module FormatterSupport
       |                 got: 1
       |
       |            (compared using ==)
-      |          # ./spec/rspec/core/resources/formatter_specs.rb:43:in #{quoted('block (2 levels) in <top (required)>')}
+      |          # ./spec/rspec/core/resources/formatter_specs.rb:42:in #{quoted('block (2 levels) in <top (required)>')}
       |
       |     3.2) Failure/Error: expect(3).to eq(4)
       |
@@ -111,7 +111,7 @@ module FormatterSupport
       |                 got: 3
       |
       |            (compared using ==)
-      |          # ./spec/rspec/core/resources/formatter_specs.rb:44:in #{quoted('block (2 levels) in <top (required)>')}
+      |          # ./spec/rspec/core/resources/formatter_specs.rb:43:in #{quoted('block (2 levels) in <top (required)>')}
       |
       |  4) a failing spec with odd backtraces fails with a backtrace that has no file
       |     Failure/Error: ERB.new("<%= raise 'foo' %>").result
@@ -119,7 +119,7 @@ module FormatterSupport
       |     RuntimeError:
       |       foo
       |     # (erb):1:in #{quoted('<main>')}
-      |     # ./spec/rspec/core/resources/formatter_specs.rb:52:in #{quoted('block (2 levels) in <top (required)>')}
+      |     # ./spec/rspec/core/resources/formatter_specs.rb:51:in #{quoted('block (2 levels) in <top (required)>')}
       |     # ./spec/support/formatter_support.rb:#{RUN_LINE}:in #{quoted("#{maybe_module}run_rspec_with_formatter")}
       |     # ./spec/support/formatter_support.rb:3:in #{quoted("#{maybe_module}run_example_specs_with_formatter")}
       |     # ./spec/support/sandboxing.rb:16:in #{quoted('block (3 levels) in <top (required)>')}
@@ -144,11 +144,11 @@ module FormatterSupport
       |Failed examples:
       |
       |rspec ./spec/rspec/core/resources/formatter_specs.rb:4 # pending command with block format behaves like shared is marked as pending but passes
-      |rspec ./spec/rspec/core/resources/formatter_specs.rb:38 # failing spec fails
-      |rspec ./spec/rspec/core/resources/formatter_specs.rb:42 # failing spec fails twice
-      |rspec ./spec/rspec/core/resources/formatter_specs.rb:49 # a failing spec with odd backtraces fails with a backtrace that has no file
-      |rspec ./spec/rspec/core/resources/formatter_specs.rb:55 # a failing spec with odd backtraces fails with a backtrace containing an erb file
-      |rspec ./spec/rspec/core/resources/formatter_specs.rb:67 # a failing spec with odd backtraces with a `nil` backtrace raises
+      |rspec ./spec/rspec/core/resources/formatter_specs.rb:37 # failing spec fails
+      |rspec ./spec/rspec/core/resources/formatter_specs.rb:41 # failing spec fails twice
+      |rspec ./spec/rspec/core/resources/formatter_specs.rb:48 # a failing spec with odd backtraces fails with a backtrace that has no file
+      |rspec ./spec/rspec/core/resources/formatter_specs.rb:54 # a failing spec with odd backtraces fails with a backtrace containing an erb file
+      |rspec ./spec/rspec/core/resources/formatter_specs.rb:66 # a failing spec with odd backtraces with a `nil` backtrace raises
     EOS
   end
 
