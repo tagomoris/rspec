@@ -82,6 +82,7 @@ module RSpec
       end
 
       RSpec.describe RecentlyModified do
+        # rubocop:disable-next Style/TimeNow
         before do
           allow(File).to receive(:mtime).with('./file_1.rb').and_return(::Time.new)
           allow(File).to receive(:mtime).with('./file_2.rb').and_return(::Time.new + 1)
