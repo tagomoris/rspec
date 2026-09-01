@@ -48,12 +48,11 @@ module RSpec
           @write_io.write("#{packet.bytesize}\n#{packet}")
         end
 
-        # rubocop:disable Security/MarshalLoad
+        # rubocop:disable-next Security/MarshalLoad
         def receive
           packet_size = Integer(@read_io.gets)
           Marshal.load(@read_io.read(packet_size))
         end
-        # rubocop:enable Security/MarshalLoad
 
         def close
           @read_io.close
