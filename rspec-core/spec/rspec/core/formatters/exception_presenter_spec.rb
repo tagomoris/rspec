@@ -661,7 +661,7 @@ module RSpec::Core
       end
 
       context "when the stacktrace is frozen" do
-        let(:exception) { instance_double(Exception, :backtrace => [ "#{__FILE__}:#{__LINE__}"].tap(&:freeze)) }
+        let(:exception) { instance_double(Exception, :backtrace => [ "#{__FILE__}:#{__LINE__}"].freeze) }
 
         it 'still finds the backtrace line' do
           expect(read_failed_lines.first).to include("instance_double(Exception, :backtrace => [ \"\#{__FILE__}:\#{__LINE__}\"")
